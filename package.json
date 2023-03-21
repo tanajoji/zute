@@ -2,7 +2,7 @@
   "name": "zute",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://tanajoji.github.io/zute",
+  "homepage": "https://tanajoji.github.io/zute",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
