@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/zute/static/css/main.073c9b0a.css",
-    "main.js": "/zute/static/js/main.7cab47d8.js",
-    "static/js/787.c2718416.chunk.js": "/zute/static/js/787.c2718416.chunk.js",
-    "index.html": "/zute/index.html",
-    "main.073c9b0a.css.map": "/zute/static/css/main.073c9b0a.css.map",
-    "main.7cab47d8.js.map": "/zute/static/js/main.7cab47d8.js.map",
-    "787.c2718416.chunk.js.map": "/zute/static/js/787.c2718416.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.f4824ddd.js",
+    "static/js/787.c2718416.chunk.js": "/static/js/787.c2718416.chunk.js",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.f4824ddd.js.map": "/static/js/main.f4824ddd.js.map",
+    "787.c2718416.chunk.js.map": "/static/js/787.c2718416.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.7cab47d8.js"
+    "static/js/main.f4824ddd.js"
   ]
 }
