@@ -1,0 +1,72 @@
+.header{
+    text-align: center;
+    border-bottom: 1px solid rgb(183, 173, 173);
+    color: #f4aa50;
+}
+.vfContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.formContainer{
+    border: 1px solid  rgb(183, 173, 173);
+    background-color: #f4aa50;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 0;
+    color: white;
+}
+.authField {
+    border: 0.1px #d9d9d9 solid !important;
+    border-radius: 12px !important;
+    padding: 0px 18px 0px 18px;
+    height: 53px;
+    width: 100%;
+    font-size: 15px;
+    color: #5f5f5f;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+.authField::placeholder, .categorySelect__placeholder {
+    color: #A4A4A4;
+    opacity: 1;
+}
+.authField:-ms-input-placeholder {
+    color: #A4A4A4;
+}
+.authField:focus{
+    outline: 0.1px #898989 solid;
+}
+.showPasswordContainer{
+    color: #646464;
+    font-size: 15px;
+    display: flex;
+    padding-top: 5px;
+}
+
+.submitButton{ 
+    width: 100%; 
+    border: none;
+    text-align: center;
+    background: #101c37;
+    border-radius: 12px;
+    box-shadow: 0px 10px 5px -8px rgb(144 144 144 / 89%);
+    height: 53px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3d3d3d;
+    margin-top: 30px;
+    color: white;
+}
