@@ -1,24 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=VT323&display=swap");
 
 body{
-  margin: 20px;
-  font-family: poppins;
   color: #000000;
-}
-
-a{
-  color: rgb(3,196,154);
-}
-
-img{
-  max-width: 100%;
-}
-
-.content{
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.active{
-  color: rgb(148, 83, 83);
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: 'Poppins';
+  overflow: hidden;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 }
