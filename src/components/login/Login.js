@@ -1,14 +1,10 @@
 import { useState } from 'react'
-import { useNavigate } from "react-router-dom"
-
 import './Login.css'
 
 const Login = () => {
     const [email, SetEmail] = useState('')
     const [password, SetPassword] = useState('')
     const [showPassword, setShowPassword] = useState(false);
-
-    const navigate = useNavigate();
 
     const LoginUser = async (e) => {
         e.preventDefault();
@@ -30,7 +26,7 @@ const Login = () => {
 		if (data.token) {
 			localStorage.setItem('token', data.token)
 			alert('Login successful')
-			navigate("")
+			window.location.href = '/'
 		} else {
 			alert('Please check your username and password')
 		}
