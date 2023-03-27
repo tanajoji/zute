@@ -9,7 +9,7 @@ const Login = () => {
     const LoginUser = async (e) => {
         e.preventDefault();
         
-        const response = await fetch('http://localhost:1337/api/users/auth', {
+        const response = await fetch('https://zute.onrender.com/api/users/auth', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
