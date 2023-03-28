@@ -12,7 +12,7 @@
 .formContainer{
     /* border: 1px solid  rgb(183, 173, 173); */
     background-color: #f4aa50;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 30px;
     margin: 0 auto;
     width: 50vw;
@@ -73,4 +73,7 @@
 .switchPageLink{
     color: #0ec1f9;
     cursor: pointer;
+}
+.loadingIcon{
+    width: 45px;
 }

@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './Login.css'
+import Loading from "./Loading.svg";
+
 
 const Login = () => {
     const [email, SetEmail] = useState('')
@@ -7,6 +9,7 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
     const [firstname, setFirstName] = useState('');
     const [lastname, setLastName] = useState('');
+    const [isLoading, setIsLoading] = useState(false)
 
     const [loginOrSignup, setloginOrSignup] = useState(true); // true--> show login, else signup
     const toggleLoginSignup = () => {
@@ -18,6 +21,7 @@ const Login = () => {
     const LoginUser = async (e) => {
         e.preventDefault();
         
+        setIsLoading(true)
         if(loginOrSignup){
             const response = await fetch('https://zute.onrender.com/api/users/auth', {
                 method: 'POST',
@@ -64,6 +68,8 @@ const Login = () => {
                 alert('Please Try Again')
             }
         }
+
+        setIsLoading(false)
     }
 
     return (
@@ -113,7 +119,13 @@ const Login = () => {
                         <input type="checkbox" id="showPwd" onChange={(e) => setShowPassword(e.target.checked)}/>
                         <label htmlFor="showPwd">Show password</label>
                     </div>
-                    <input type="submit" className="submitButton" value="Continue" />
+                    <button type="submit" className="submitButton">{
+                        isLoading ?
+                            <img src={Loading} alt="Loading" className="loadingIcon"/>
+                        :
+                            <p>Continue</p>
+                        }                
+                    </button>
                 </form>
             </div>
             <p>
@@ -123,7 +135,7 @@ const Login = () => {
                 <>Go to  <span className="switchPageLink" onClick={toggleLoginSignup}>Login</span></>
             }
             </p>
-            <iframe width="auto" height="315" src="https://www.youtube.com/embed/o7Yof1oaASk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            {/* <iframe width="auto" height="315" src="https://www.youtube.com/embed/o7Yof1oaASk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
         </div>
         </>
     )
