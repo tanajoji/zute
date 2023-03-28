@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Login.css'
 import Loading from "./Loading.svg";
+import ZuteCard from "../../assets/zutecard.png"
 
 
 const Login = () => {
@@ -135,6 +136,7 @@ const Login = () => {
                 <>Go to  <span className="switchPageLink" onClick={toggleLoginSignup}>Login</span></>
             }
             </p>
+            <img className="cardImage" src={ZuteCard} alt="Card Images"></img>
             {/* <iframe width="auto" height="315" src="https://www.youtube.com/embed/o7Yof1oaASk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
         </div>
         </>
