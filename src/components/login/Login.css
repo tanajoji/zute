@@ -1,11 +1,20 @@
+.landingFrame{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.landingFrame::-webkit-scrollbar{
+    display: none; /* chrome */
+}
+
 .header{
     text-align: center;
     /* border-bottom: 1px solid rgb(183, 173, 173); */
     color: #f4aa50;
 }
 .vfContainer{
-    overflow-y: auto;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,5 +90,5 @@
     width: 45px;
 }
 .cardImage{
-    width: -webkit-fill-available;
+    width: 50vh;
 }
