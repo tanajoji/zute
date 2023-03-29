@@ -1,0 +1,47 @@
+.dashboardFrame{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 40px 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.dashboardFrame::-webkit-scrollbar{
+    display: none; /* chrome */
+}
+
+.profileSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profilePic{
+    background-position: center;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profileContents{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    /* background-color: #00000038;
+    padding: 15px;
+    border-radius: 10px; */
+}
+.userName{
+    font-size: 20px;
+}
+.userData{
+    font-size: 15px;
+}
+
+.linksSection{
+    border-top-left-radius: 180px;
+    border-top-right-radius: 180px;
+    background-color: #eab473;
+    height: 100%;
+    margin: -41px;
+}
