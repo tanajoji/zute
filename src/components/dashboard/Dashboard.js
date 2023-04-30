@@ -1,5 +1,6 @@
 import './Dashboard.css'
 import Dp from "../../assets/steff.jpg"
+import AddNew from "./addNewIcon.svg";
 import React,{useEffect, useState} from 'react';
 
 
@@ -60,7 +61,20 @@ const DashData = (props) => {
                 </div>
             </div>
             <div className='linksSection'>
-
+                <div className='linksContainer'>
+                    {
+                        props.data.links.map((link, index) => {
+                            return (
+                                <div className='linkCard'>
+                                    {/* <img className='linkImage' src={link.image}/> */}
+                                    <p className='linkName'>{link.name}</p>
+                                    <a href={link.tag}>Go To Page</a>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <img src={AddNew} alt="AddNewLink" className="addNewIcon"/>
             </div>
         </div>)
     )

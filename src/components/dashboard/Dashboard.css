@@ -45,4 +45,31 @@
     background-color: #eab473;
     height: 100%;
     margin: -41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linksContainer{
+    display: flex;
+    padding: 71px;
+    flex-direction: column;
+    gap: 15px;
+}
+.linkCard{
+    display: flex;
+    flex-direction: column;
+    background-color: #00000085;
+    border-radius: 50px;
+    padding: 0px 50px;
+    width: 200px;
+}
+.linkName{
+    line-height: 0;
+}
+a{
+    color: #2eaeb7;
+    text-decoration: none;
+}
+.addNewIcon{
+    width: 40px;
 }
