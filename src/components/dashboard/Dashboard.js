@@ -1,6 +1,7 @@
 import './Dashboard.css'
 import Dp from "../../assets/steff.jpg"
 import AddNew from "./addNewIcon.svg";
+import EditIcon from "./editIcon.svg";
 import React,{useEffect, useState} from 'react';
 
 
@@ -53,10 +54,15 @@ const DashData = (props) => {
                     </div>
                 </div>
                 <div className='profileContents'>
-                    <h1 className='userName'>{props.data.firstname} {props.data.lastname}</h1>
+                    <div className='nameAndEditButton'>
+                        <h1 className='userName'>{props.data.firstname} {props.data.lastname}</h1>
+                        <img src={EditIcon} alt="EditIcon" className="editIcon"/>
+                    </div>
+                    {/* <h1 className='userName'>{props.data.firstname} {props.data.lastname}</h1> */}
                     <div>
                         <p className='userData'>{props.data.phone}</p>
                         <p className='userData'>{props.data.email}</p>
+                        {/* <img src={EditIcon} alt="EditIcon" className="editIcon"/> */}
                     </div>
                 </div>
             </div>

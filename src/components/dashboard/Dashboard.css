@@ -38,6 +38,13 @@
 .userData{
     font-size: 15px;
 }
+.nameAndEditButton{
+    display: flex;
+}
+.editIcon{
+    height: 30px;
+    padding-left: 10%;
+}
 
 .linksSection{
     border-top-left-radius: 180px;
