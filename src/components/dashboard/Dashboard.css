@@ -33,6 +33,7 @@
 }
 .userName{
     font-size: 20px;
+    text-transform: capitalize;
 }
 .userData{
     font-size: 15px;
